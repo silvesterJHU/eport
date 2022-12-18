@@ -1,0 +1,232 @@
+:root{
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.headerOption{
+    list-style: none;
+}
+
+.infoButtonArea{
+    display: flex;
+    width: fit-content;
+}
+
+.infoButton{
+    outline: none;
+    background-color: #fff;
+    border: 1px solid #1B67B2;
+    color: #1B67B2;
+    border-radius: 10px;
+    margin-right: 1rem;
+    font-weight: bold;
+    padding: 1rem 1.5rem;
+    box-shadow: 0px 1px 3px rgba(0,0,0,25%);
+    transition: .3s;
+}
+
+.infoButton:hover{
+    background-color: #1B67B2;
+    color: #fff;
+}
+
+.infoButtonActive{
+    background-color: #1B67B2;
+    color: #fff;
+}
+
+.understandMoreButton{
+    border: 1px solid #ddd;
+    box-shadow: 0px 1px 3px rgba(0,0,0,25%);
+    border-radius: 20px;
+    margin: 20px 0px;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #1B67B2;
+    font-weight: bold;
+}
+
+.moreEventButton{
+    border: 1px solid #ddd;
+    box-shadow: 0px 1px 3px rgba(0,0,0,25%);
+    border-radius: 20px;
+    margin: 20px 0px;
+    padding: 15px 25px;
+    background-color: #F8E449;
+    color: #1B67B2;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.moreEventButton:hover{
+    background-color: #1B67B2;
+    color: #F8E449;
+    transform: scale(1.05);
+    box-shadow: 0px 1px 10px rgba(0,0,0,25%);
+}
+
+.title{
+    color: #1B67B2;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.theDropdownMenu{
+    padding: 0px !important;
+}
+
+.dropdownItem{
+    border-bottom: 1px solid #ccc;
+    padding: .5rem 1rem;
+}
+
+.navbar-brand img{
+    width: 140px;
+    height: 30px;
+}
+
+.chooseTextArea{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.infoTitle{
+    color: #1B67B2;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+.choosePhotoArea{
+    flex: 1;
+}
+
+.choosePhotoArea img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.cardstyle{
+    height: 100%;
+    border-radius: 20px !important;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 30%);
+    transition: .3s;
+}
+
+.cardstyle:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 30%);
+
+}
+
+.cardstyle img{
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+    object-position: center;
+    height: 250px;
+}
+
+.carStyleTitle{
+    font-weight: bolder;
+    color: #000;
+}
+
+.whiteBackGround{
+    background-color: #fff;
+}
+
+.greyBackGround{
+    background-color: rgb(243, 243, 243);
+}
+
+.yellowBackGround{
+    background-color: #FDF6C0;
+}
+
+.footerBackGround{
+    background-color: #1b67b2;
+    padding: 25px 0;
+    color: #ffffff !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    font-family: rubik;
+    font-size: 14px;
+}
+
+.footerLogoArea{
+    flex: 1;
+}
+
+.footerLogoArea img{
+    width: 158px;
+    height: 40px;
+}
+
+.footerToolArea{
+    flex: 2;
+}
+
+.footerToolOption{
+    list-style: none;
+    padding: 0px;
+}
+
+.footerToolOption li{
+    margin: 10px 0px;
+}
+
+.footerToolOption a{
+    color: white;
+    text-decoration: none;
+}
+
+.footerToolOption a:hover{
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footerContactArea{
+    flex: 2;
+}
+
+.footerAbout{
+    flex: 3;
+}
+
+.socialLinkArea{
+    width: fit-content;
+    display: flex;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.socialLink{
+    margin-top: 0px;
+}
+
+.socialLink img{
+    width: 30px;
+    height: 30px;
+}
+
+.luckertw img{
+    width: 120px;
+    height: 20px;
+}
+
+@media screen and (max-width:992px){
+.carousel-item img{
+    min-width: 992px;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+}

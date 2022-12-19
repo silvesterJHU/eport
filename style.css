@@ -9,6 +9,42 @@ a{
 
 .headerOption{
     list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.headerOption li a{
+    padding: .5rem .4rem;
+}
+
+#navToggler{
+    border: 1px botted #333 !important;
+    border-radius: 10px !important;
+}
+
+#navToggler img{
+    width: 25px;
+    height: 25px;
+}
+
+#searchArea button img{
+    width: 25px;
+    height: 25px;
+}
+
+.computerCarousel img{
+    width: 100%;
+    min-width: 320px;
+    height: 480px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.mobileCarousel img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .infoButtonArea{
@@ -24,7 +60,7 @@ a{
     border-radius: 10px;
     margin-right: 1rem;
     font-weight: bold;
-    padding: 1rem 1.5rem;
+    padding: 10px 20px;
     box-shadow: 0px 1px 3px rgba(0,0,0,25%);
     transition: .3s;
 }
@@ -131,7 +167,8 @@ a{
     border-radius: 20px 20px 0px 0px;
     object-fit: cover;
     object-position: center;
-    height: 250px;
+    height: 200px;
+    width: 100%;
 }
 
 .carStyleTitle{
@@ -162,6 +199,9 @@ a{
 
 .footerLogoArea{
     flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .footerLogoArea img{
@@ -171,6 +211,9 @@ a{
 
 .footerToolArea{
     flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .footerToolOption{
@@ -194,6 +237,9 @@ a{
 
 .footerContactArea{
     flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .footerAbout{
@@ -222,11 +268,8 @@ a{
     height: 20px;
 }
 
-@media screen and (max-width:992px){
-.carousel-item img{
-    min-width: 992px;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-}
+@media screen and (max-width:991px){
+    .headerOption li a{
+        padding: .5rem 0px;
+    }
 }

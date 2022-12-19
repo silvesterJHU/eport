@@ -26,19 +26,13 @@
         <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid pt-3 pb-3 ps-5 pe-5">
                 <a class="navbar-brand" href="#"><img src="./images/eport Logo.png" alt="Logo.png"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                <button id="navToggler" class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <img src="./images/icons8-menu.svg" alt="menu">
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <!-- <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li> -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
@@ -62,9 +56,9 @@
                             </ul>
                         </li>
                     </ul>
-                    <form class="d-flex" role="search">
+                    <form class="d-flex" role="search" id="searchArea">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
+                        <button class="btn btn-outline-secondary" type="image"><img src="./images/icons8-search.svg" alt="search"></button>
                     </form>
                     <ul class="headerOption d-block d-lg-flex">
                         <li class="nav-item">
@@ -84,14 +78,36 @@
             </div>
         </nav>
 
-        <!-- 02-Carousel -->
-        <div id="carouselExampleInterval" class="carousel slide " data-bs-ride="carousel">
-            <div class="carousel-inner">
+        <!-- 02-Carousel電腦版 -->
+        <div id="carouselExampleInterval" class="carousel slide d-none d-lg-block" data-bs-ride="carousel">
+            <div class="carousel-inner computerCarousel">
                 <div class="carousel-item active" data-bs-interval="3000">
-                    <img src="./images/E-port herobanner1.png" class="d-block w-100" alt="herobanner1.png">
+                    <img src="./images/E-port herobanner1.png" class="d-block" alt="herobanner1.png">
                 </div>
                 <div class="carousel-item" data-bs-interval="3000">
-                    <img src="./images/E-port herobanner2.png" class="d-block w-100" alt="herobanner2.png">
+                    <img src="./images/E-port herobanner2.png" class="d-block" alt="herobanner2.png">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- 02-Carousel手機版 -->
+        <div id="carouselExampleInterval" class="carousel slide d-block d-lg-none" data-bs-ride="carousel">
+            <div class="carousel-inner mobileCarousel">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="./images/E-port herobanner1-mobile.png" class="d-block" alt="herobanner1.png">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="./images/E-port herobanner2-mobile.jpg" class="d-block" alt="herobanner2.png">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
@@ -110,29 +126,35 @@
             <div class="container">
                 <div class="text-center title">為甚麼選擇我們?</div>
                 <div class="row mt-3">
-                    <div class="col-12 col-lg-6 chooseTextArea order-2 order-lg-1" data-aos="fade-down"  data-aos-duration="1000">
+                    <div class="col-12 col-lg-6 chooseTextArea order-2 order-lg-1" data-aos="fade-down"
+                        data-aos-duration="1000">
                         <div class="text-center infoTitle">多種工具，讓你更了解自己</div>
                         <div>興趣測驗、個人性向測驗等，讓你不再為選系選未來而煩惱！</div>
                     </div>
-                    <div class="col-12 col-lg-6 choosePhotoArea order-1 order-lg-2" data-aos="fade-up"   data-aos-duration="1000">
+                    <div class="col-12 col-lg-6 choosePhotoArea order-1 order-lg-2" data-aos="fade-up"
+                        data-aos-duration="1000">
                         <img src="./images/quix.jpg" alt="">
                     </div>
                 </div>
                 <div class="row mt-3">
-                    <div class="col-12 col-lg-6 choosePhotoArea order-1 order-lg-1" data-aos="fade-right"  data-aos-duration="1000">
+                    <div class="col-12 col-lg-6 choosePhotoArea order-1 order-lg-1" data-aos="fade-down"
+                        data-aos-duration="1000">
                         <img src="./images/news.jpg" alt="">
                     </div>
-                    <div class="col-12 col-lg-6 chooseTextArea order-2 order-lg-2" data-aos="fade-up"   data-aos-duration="1000">
+                    <div class="col-12 col-lg-6 chooseTextArea order-2 order-lg-2" data-aos="fade-up"
+                        data-aos-duration="1000">
                         <div class="text-center infoTitle">新鮮情報，讓你取得第一手資訊</div>
                         <div>多個學習資訊集合，使你更快的跟上世界潮流</div>
                     </div>
                 </div>
                 <div class="row mt-3">
-                    <div class="col-12 col-lg-6 chooseTextArea order-2 order-lg-1" data-aos="fade-left"  data-aos-duration="1000">
+                    <div class="col-12 col-lg-6 chooseTextArea order-2 order-lg-1" data-aos="fade-down"
+                        data-aos-duration="1000">
                         <div class="text-center infoTitle">豐富的營隊之旅，拓展不一樣的視野</div>
                         <div>寒假與暑假想體驗不一樣的學科之旅嗎?E-port提供多種營隊，讓你眼界更寬廣！</div>
                     </div>
-                    <div class="col-12 col-lg-6 choosePhotoArea order-1 order-lg-2" data-aos="fade-down"   data-aos-duration="1000">
+                    <div class="col-12 col-lg-6 choosePhotoArea order-1 order-lg-2" data-aos="fade-up"
+                        data-aos-duration="1000">
                         <img src="./images/camp.jpg" alt="">
                     </div>
                 </div>
@@ -186,8 +208,8 @@
             <div class="container">
                 <div class="text-center title">免費專區</div>
                 <div class="row">
-                    <div data-aos="zoom-in-up" class="col-12 col-md-6 col-lg-3 mt-3" v-for="item in showedFreeStuff" 
-                    :key="item.title">
+                    <div data-aos="zoom-in-up" class="col-12 col-md-6 col-lg-3 mt-3" v-for="item in showedFreeStuff"
+                        :key="item.title">
                         <div class="card ms-auto me-auto cardstyle w-100" style="width: 18rem;">
                             <a href="#"><img :src="item.imgPath" class="card-img-top" :alt="item.title"></a>
                             <div class="card-body">
@@ -214,7 +236,8 @@
             <div class="container">
                 <div class="text-center title">新鮮乾貨</div>
                 <div class="row">
-                    <div data-aos="zoom-in-up" class="col-12 col-md-6 col-lg-3 mt-3" v-for="item in showedFreeStuff" :key="item.title">
+                    <div data-aos="zoom-in-up" class="col-12 col-md-6 col-lg-3 mt-3" v-for="item in showedFreeStuff"
+                        :key="item.title">
                         <div class="card ms-auto me-auto cardstyle w-100" style="width: 18rem;">
                             <a href="#"><img :src="item.imgPath" class="card-img-top" :alt="item.title"></a>
                             <div class="card-body">
@@ -269,7 +292,8 @@
             <div class="container">
                 <div class="text-center title">精選活動</div>
                 <div class="row">
-                    <div data-aos="zoom-in-up" class="col-12 col-md-6 col-lg-3 mt-3" v-for="item in showedFeaturedEvents" :key="item.title">
+                    <div data-aos="zoom-in-up" class="col-12 col-md-6 col-lg-3 mt-3"
+                        v-for="item in showedFeaturedEvents" :key="item.title">
                         <div class="card ms-auto me-auto cardstyle w-100" style="width: 18rem;">
                             <a href="#"><img :src="item.imgPath" class="card-img-top" :alt="item.title"></a>
                             <div class="card-body">

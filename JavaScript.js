@@ -86,7 +86,7 @@ const app = Vue.createApp({
                     endTime: `2023年1月29號`,
                     location: "線上",
                     fee: "免費",
-                    hashtag: ["#學習歷程", "徵件比賽"]
+                    hashtag: ["#學習歷程 ", "#徵件比賽 "]
                 },
             ],
             showedPopular: [],
@@ -98,7 +98,7 @@ const app = Vue.createApp({
                     endTime: `2023年1月31號`,
                     location: "線上",
                     fee: "免費",
-                    hashtag: ["#文史哲學群"]
+                    hashtag: ["#文史哲學群 "]
                 },
                 {
                     imgPath: "./images/free/第六屆林佛兒獎.jpg",
@@ -107,7 +107,7 @@ const app = Vue.createApp({
                     endTime: `2023年1月16號`,
                     location: "線上",
                     fee: "免費",
-                    hashtag: ["#文史哲學群", "#社會與心理學群"]
+                    hashtag: ["#文史哲學群 ", "#社會與心理學群 "]
                 },
                 {
                     imgPath: "./images/free/2023年第十九屆全國電子設計創意競賽.jpeg",
@@ -116,7 +116,7 @@ const app = Vue.createApp({
                     endTime: ``,
                     location: "線上",
                     fee: "免費",
-                    hashtag: ["#資訊學群", "#工程學群"]
+                    hashtag: ["#資訊學群 ", "#工程學群 "]
                 },
                 {
                     imgPath: "./images/free/中藥概論.jpg",
@@ -125,7 +125,7 @@ const app = Vue.createApp({
                     endTime: `2023年03月13日`,
                     location: "線上",
                     fee: "免費",
-                    hashtag: ["#醫藥衛生學群"]
+                    hashtag: ["#醫藥衛生學群 "]
                 },
                 {
                     imgPath: "...",
@@ -146,7 +146,7 @@ const app = Vue.createApp({
                     endTime: `2023年2月8日`,
                     location: "國立台北商業大學",
                     fee: "5600元",
-                    hashtag: ["#資訊學群"]
+                    hashtag: ["#資訊學群 "]
                 },
                 {
                     imgPath: "./images/campEvents/shinchan.png",
@@ -155,7 +155,7 @@ const app = Vue.createApp({
                     endTime: `2023年2月9日`,
                     location: "亞洲大學校園",
                     fee: "4500元(早鳥)/4800元/團報請洽粉專",
-                    hashtag: ["#數理化學群", "#醫藥衛生學群"]
+                    hashtag: ["#數理化學群 ", "#醫藥衛生學群 "]
                 },
                 {
                     imgPath: "./images/campEvents/winterCamp.jpg",
@@ -164,7 +164,7 @@ const app = Vue.createApp({
                     endTime: `2023年2月10日`,
                     location: "台灣藝術大學",
                     fee: "3600~7000元",
-                    hashtag: ["#建築與設計學群", "#藝術學群"]
+                    hashtag: ["#建築與設計學群 ", "#藝術學群 "]
                 },
                 {
                     imgPath: "./images/campEvents/medicalWinterCamp.jpg",
@@ -173,7 +173,7 @@ const app = Vue.createApp({
                     endTime: `2023年2月2日`,
                     location: "中國醫藥大學",
                     fee: "8000元",
-                    hashtag: ["#醫藥衛生學群"]
+                    hashtag: ["#醫藥衛生學群 "]
                 },
                 {
                     imgPath: "...",

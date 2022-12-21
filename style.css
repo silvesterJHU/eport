@@ -125,8 +125,8 @@ a{
 }
 
 .userImgArea img{
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     border-radius: 100%;
 }
 
@@ -280,6 +280,19 @@ a{
     border-radius: 20px !important;
     box-shadow: 0px 2px 3px rgba(0, 0, 0, 30%);
     transition: .3s;
+}
+
+.cardstyle p{
+    color: #999;
+    font-size: 0.9rem;
+}
+
+.hashtag{
+    text-decoration: none;
+}
+
+.hashtag:hover{
+    text-decoration: underline;
 }
 
 .cardstyle:hover{

@@ -9,6 +9,11 @@ window.onscroll=function(){
 const app = Vue.createApp({
     data() {
         return {
+            loginData:{
+                status:false,
+                userName:"Silvester",
+                userImg:"./images/userImg.jpg",
+            },
             eventArea: [
                 "寒假營隊專區", "競賽專區", "學生自辦", "免費專區", "檢定證照", "精選專區"
             ],
@@ -260,6 +265,12 @@ const app = Vue.createApp({
         backToTop(){
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
+        },
+        logOff(){
+            this.loginData.staus=false
+        },
+        logIn(){
+            this.loginData.status=true
         }
     },
     computed: {

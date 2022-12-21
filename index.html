@@ -37,7 +37,7 @@
         </div>
         <!-- 01headerNav -->
         <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container-fluid pt-3 pb-3 ps-5 pe-5">
+            <div class="container-fluid pt-1 pb-1 ps-5 pe-5">
                 <a class="navbar-brand" href="#"><img src="./images/eport Logo.png" alt="Logo.png"></a>
                 <button id="navToggler" class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -45,8 +45,8 @@
                     <img src="./images/icons8-menu.svg" alt="menu">
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item dropdown">
+                    <ul class="mainArea navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown m-1">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 活動專區
@@ -57,7 +57,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="nav-item dropdown">
+                        <li class="nav-item dropdown m-1">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 關於我們
@@ -68,7 +68,19 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item dropdown m-1">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                小工具
+                            </a>
+                            <ul class="dropdown-menu theDropdownMenu">
+                                <li class="dropdownItem"><a class="dropdown-item" href="#">興趣測驗</a></li>
+                                <li class="dropdownItem"><a class="dropdown-item" href="#">學習情報</a></li>
+                                <li class="dropdownItem"><a class="dropdown-item" href="#">上架活動</a></li>
+                            </ul>
+                        </li>
+                        <!--   -->
+                        <li class="nav-item m-1">
                             <button id="donateArea">
                                 <div id="donateHeart"><img src="./images/icons8-heart-50.png" alt="heart"></div>
                                 支持我們
@@ -80,9 +92,21 @@
                         <button class="btn btn-outline-secondary" type="image"><img src="./images/icons8-search.svg"
                                 alt="search"></button>
                     </form>
-                    <ul class="headerOption d-block d-lg-flex">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">登入</a>
+                    <ul class="userArea headerOption d-block d-lg-flex">
+                        <li v-if="loginData.status" class="userImgArea nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img :src=loginData.userImg alt="userImg">
+                                    {{loginData.userName}}
+                            </a>
+                            <ul class="theDropdownMenu dropdown-menu">
+                                <li  class="dropdownItem"><a class="dropdown-item" href="#">會員中心</a></li>
+                                <li  class="dropdownItem"><a class="dropdown-item" href="#">許願池</a></li>
+                                <li @click="logOff" class="dropdownItem"><a class="dropdown-item" href="#">登出</a></li>
+                            </ul>
+                        </li>
+                        <li v-else class="nav-item">
+                            <button @click="logIn" class="userButton">登入</button>
                         </li>
                     </ul>
                 </div>

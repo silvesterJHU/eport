@@ -93,7 +93,7 @@
                                 alt="search"></button>
                     </form>
                     <ul class="userArea headerOption d-block d-lg-flex">
-                        <li v-if="loginData.status" class="userImgArea nav-item dropdown">
+                        <li v-if="loginData.status" class="userImgArea nav-item dropdown m-1">
                             <a class="nav-link dropdown-toggle" href="#" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 <img :src=loginData.userImg alt="userImg">
@@ -105,7 +105,7 @@
                                 <li @click="logOff" class="dropdownItem"><a class="dropdown-item" href="#">登出</a></li>
                             </ul>
                         </li>
-                        <li v-else class="nav-item">
+                        <li v-else class="nav-item m-1">
                             <button @click="logIn" class="userButton">登入</button>
                         </li>
                     </ul>
